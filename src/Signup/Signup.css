@@ -1,0 +1,13 @@
+.box{
+    background: url('./bg5.jpeg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    
+}
+.box i{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+}

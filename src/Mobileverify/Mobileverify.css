@@ -1,0 +1,9 @@
+.otp{
+    background: url("./otp.avif");
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+.boxs{
+    background-color:#375963;
+    margin-left: 30%;
+}

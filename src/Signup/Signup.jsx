@@ -2,10 +2,15 @@ import React, { useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import ResetPassword from "./ResetPassword"; // Import the ResetPassword component
 import "../Signup/Signup.css";
+import { useNavigate } from "react-router-dom";
 import "bootstrap";
-import Auth from "../Auth/Auth";
+// import Auth from "../Auth/Auth";
+// import Mobileverify from "../Mobileverify/Mobileverify"
+
 
 export default function AuthPage(props) {
+  const navigate = useNavigate();
+
   let [authMode, setAuthMode] = useState("signin");
 
   const changeAuthMode = () => {
@@ -16,7 +21,12 @@ export default function AuthPage(props) {
     // Set authMode to reset password
     setAuthMode("resetPassword");
   };
-
+  const handleMobileverify = () => {
+    // Set authMode to reset password
+    console.log("Mobile..");
+    navigate('/mobileverify');
+   
+  };
   if (authMode === "signin") {
     return (
       <div class="box">
@@ -37,6 +47,7 @@ export default function AuthPage(props) {
                     type="email"
                     className="bg-transparent border-0 border-bottom mt-5 text-light"
                     placeholder="Enter email"
+                    required
                   />{" "}
                   <i class="bx bxs-user"></i>
                 </div>
@@ -45,11 +56,17 @@ export default function AuthPage(props) {
                     type="password"
                     className="bg-transparent border-0 border-bottom mt-5 text-light"
                     placeholder="Enter password"
+                    required
                   />
                 </div>
-                <div className="d-grid gap-2 pt-5">
+                {/* <div className="d-grid gap-2 pt-5">
                   <button type="submit" className="btn btn-outline-warning">
-                    <span className="link-warning text-dark">Login</span>
+                    <span className="">Login</span>
+                  </button>
+                </div> */}
+                <div className="d-grid gap-2 mt-3">
+                  <button onClick={handleMobileverify} className="btn btn-outline-warning">
+                    <span > Login</span>
                   </button>
                 </div>
                 <p className="text-center mt-2">
@@ -114,8 +131,8 @@ export default function AuthPage(props) {
                   />
                 </div>
                 <div className="d-grid gap-2 mt-3">
-                  <button type="submit" className="btn btn-outline-warning">
-                    <span className="link-warning text-dark"> Register</span>
+                  <button onClick={handleMobileverify} className="btn btn-outline-warning">
+                    <span > Register</span>
                   </button>
                 </div>
                 <p className="text-center mt-2">

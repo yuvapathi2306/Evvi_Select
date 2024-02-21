@@ -2,9 +2,9 @@ import React, { useState } from "react";
 
 export default function ResetPassword({ changeAuthMode }) {
   const [email, setEmail] = useState("");
-  const [otp, setOtp] = useState("");
+  // const [otp, setOtp] = useState("");
   const [newPassword, setNewPassword] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
+  // const [errorMessage, setErrorMessage] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
 
   const handleResetPassword = (e) => {
@@ -14,7 +14,7 @@ export default function ResetPassword({ changeAuthMode }) {
 
     // For demonstration purposes, let's just log the inputs
     console.log("Email:", email);
-    console.log("OTP:", otp);
+    // console.log("OTP:", otp);
     console.log("New Password:", newPassword);
 
     // After successfully resetting the password, you can show a success message
@@ -41,7 +41,7 @@ export default function ResetPassword({ changeAuthMode }) {
                   required
                 />
               </div>
-              <div className="form-group mt-3">
+              {/* <div className="form-group mt-3">
                 <input
                   type="text"
                   className="bg-transparent border-0 border-bottom mt-5 text-light"
@@ -50,7 +50,7 @@ export default function ResetPassword({ changeAuthMode }) {
                   onChange={(e) => setOtp(e.target.value)}
                   required
                 />
-              </div>
+              </div> */}
               <div className="form-group mt-3">
                 <input
                   type="password"
@@ -77,11 +77,11 @@ export default function ResetPassword({ changeAuthMode }) {
                   Back to Sign In
                 </span>
               </p>
-              {errorMessage && (
+              {/* {errorMessage && (
                 <div className="text-danger text-center mt-2">
                   {errorMessage}
                 </div>
-              )}
+              )} */}
               {successMessage && (
                 <div className="text-success text-center mt-2">
                   {successMessage}

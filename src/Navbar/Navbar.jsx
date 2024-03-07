@@ -1,9 +1,9 @@
 import React from 'react';
-import {  Link } from "react-router-dom";
-import Logo from './logo.png';
+// import {  Link } from "react-router-dom";
+import Logo from '../assets/logo.png';
 // import "bootstrap";
 import "./Navbar.css"
-import Signup from '../Signup/Signup';
+// import Signup from '../Signup/Signup';
 import { useNavigate } from 'react-router-dom';
 
 

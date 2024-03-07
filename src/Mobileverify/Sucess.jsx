@@ -62,13 +62,13 @@
 
 
 import React, { useState, useEffect } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom'; // Importing useNavigate and useLocation
+import { useNavigate} from 'react-router-dom'; // Importing useNavigate and useLocation
 
-import image from '../Mobileverify/verified1.jpg';
+import image from '../assets/verified1.jpg';
 
 const Success = () => {
   const navigate = useNavigate(); // Using useNavigate hook instead of useHistory
-  const location = useLocation(); // Using useLocation hook
+  // const location = useLocation(); // Using useLocation hook
 
   const [seconds, setSeconds] = useState(5);
 

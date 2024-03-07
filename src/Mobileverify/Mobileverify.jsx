@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../Mobileverify/Mobileverify.css";
 
 
 export default function ResetPassword({ changeAuthMode }) {
   const navigate = useNavigate();
-  const [mobileverify, setMobileverify] = useState("");
-  const [otp, setOtp] = useState("");
-  const [newPassword, setNewPassword] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
-  const [successMessage, setSuccessMessage] = useState("");
+  // const [mobileverify, setMobileverify] = useState("");
+  // const [otp, setOtp] = useState("");
+  // const [newPassword, setNewPassword] = useState("");
+  // const [errorMessage, setErrorMessage] = useState("");
+  // const [successMessage, setSuccessMessage] = useState("");
 
   const handlesucess = () => {
     // Set authMode to reset password
@@ -27,12 +27,12 @@ export default function ResetPassword({ changeAuthMode }) {
     // You can make an API call to your backend to handle this functionality
 
     // For demonstration purposes, let's just log the inputs
-    console.log("mobilenumber:", mobileverify);
-    console.log("OTP:", otp);
+    // console.log("mobilenumber:", mobileverify);
+    // console.log("OTP:", otp);
     // console.log("New Password:", newPassword);
 
     // After successfully resetting the password, you can show a success message
-    setSuccessMessage("Password reset successfully!");
+    // setSuccessMessage("Password reset successfully!");
   };
 
   return (
@@ -57,23 +57,23 @@ export default function ResetPassword({ changeAuthMode }) {
                   required
                 /> */}
               {/* </div>  */}
-                <div ><label className="text-light">Enter Your MobileNumber</label></div>
+                <div ><label className="text-light">Enter Your OTP</label></div>
           <div class="mb-3 d-flex justify-content-around">
-            <input type="text" class="text-light text-center border border-light bg-transparent col-2 otp-input" id="otp1" maxlength="1" autocomplete="off"/>
+            <input type="text" class="text-light text-center border border-light bg-transparent col-2 otp-input" id="otp1" maxlength="1" autocomplete="off" required/>
             <h1 className="ps-1"> </h1>
-            <input type="text" class="text-light text-center border border-light bg-transparent col-2 otp-input" id="otp2" maxlength="1" autocomplete="off"/>
-            <h1 className="ps-1"> </h1>
-
-            <input type="text" class="text-light text-center border border-light bg-transparent col-2 otp-input" id="otp4" maxlength="1" autocomplete="off"/>
+            <input type="text" class="text-light text-center border border-light bg-transparent col-2 otp-input" id="otp2" maxlength="1" autocomplete="off" required/>
             <h1 className="ps-1"> </h1>
 
-            <input type="text" class="text-light text-center border border-light bg-transparent col-2 otp-input" id="otp5" maxlength="1" autocomplete="off"/>
+            <input type="text" class="text-light text-center border border-light bg-transparent col-2 otp-input" id="otp4" maxlength="1" autocomplete="off" required/>
             <h1 className="ps-1"> </h1>
 
-            <input type="text" class="text-light text-center border border-light bg-transparent col-2 otp-input" id="otp3" maxlength="1" autocomplete="off"/>
+            <input type="text" class="text-light text-center border border-light bg-transparent col-2 otp-input" id="otp5" maxlength="1" autocomplete="off" required/>
             <h1 className="ps-1"> </h1>
 
-            <input type="text" class="text-light text-center border border-light bg-transparent col-2 otp-input" id="otp6" maxlength="1" autocomplete="off"/>
+            <input type="text" class="text-light text-center border border-light bg-transparent col-2 otp-input" id="otp3" maxlength="1" autocomplete="off" required/>
+            <h1 className="ps-1"> </h1>
+
+            <input type="text" class="text-light text-center border border-light bg-transparent col-2 otp-input" id="otp6" maxlength="1" autocomplete="off" required/>
           </div>
               {/* <div className="form-group mt-3">
                 <input

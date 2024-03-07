@@ -1,0 +1,85 @@
+ /* .bg{
+    background: url('./bg5.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}  */
+/* .bg1{
+    background-color: antiquewhite;
+    height:10vh;
+    
+
+} */
+
+/* .icon{
+    /* margin-left: 80%;
+    position: absolute;
+    top:3%; */
+    /* position: relative;
+    left: 70%;
+    top: 22px; */
+    
+/* }  */
+/* .drop{
+    margin-left: 82%;
+    position: absolute;
+    top:2%
+} */
+.form-control{
+    width:70%
+}
+#button-addon5{
+    margin-left: 590%;
+    margin-top: -40%;
+    /* background-color: black; */
+    
+}
+.edit{
+    margin-left: 320%;
+    width:550%
+}
+.label{
+    margin-left: 348%;
+    width:250%
+}
+.fa-angle-double-right{
+    position: absolute;
+    top: 85%;
+    left: 1%;
+    color: wheat;
+    
+}
+.bar{
+    margin-top: 12%;
+    /* margin-left: 2%; */
+    width: 270%;
+}
+.fa-angle-double-right{
+    margin-top: 1%;
+    color: black;
+    /* margin-left: 0%; */
+} 
+.text{
+    /* margin-top: 70%; */
+    margin-top: 150%;
+    margin-left: 390%;
+    width: 600%;
+    display: flex;
+    word-break: keep-all;
+}
+.inputbox{
+    margin-left: 350%;
+    width: -520%;
+    
+
+}
+
+.light-mode {
+    background-color: #ffffff; /* Light mode background color */
+    color: #000000; /* Light mode text color */
+  }
+  
+  .dark-mode {
+    background-color: #333333; /* Dark mode background color */
+    color: #ffffff; /* Dark mode text color */
+  }
+  

@@ -1,14 +1,67 @@
-.box{
-    background: url('./bg5.jpeg');
+.box2{
+    background: url('../assets/bg5.jpeg');
     background-repeat:no-repeat;
     background-size: cover;
+    height: 120vh;
+    /* border-radius: 20px; */
+    
      
     
 }
-.box i{
-    position: absolute;
-    right: 20px;
-    top: 30%;
-    transform: translate(-50%);
-    font-size: 20px;
+.pages{
+    margin-top: -2%;
+    margin-left: 9%;
+    background-color:transparent;
+    border: solid white 1px;
+    border-radius: 10%;
 }
+.page-body{
+    margin-top: 5%;
+    
+}
+.form-control{
+    margin-left: 14%;
+    margin-top: 1%;
+    color:orange;
+    border:none;
+    background-color: transparent;
+    border-bottom: solid white 1px;
+}
+.text-label{
+     color:white;
+    margin-left: 15%;
+}
+.buttonn{
+    width: 60%;
+    margin-left: 18%;
+}
+/* .box2::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background:linear-gradient(0deg,transparent,
+    transparent,#45f3ff,#45f3ff,#45f3ff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+
+}
+.box2::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background:linear-gradient(0deg,transparent,
+    transparent,pink,pink,pink);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+
+} */

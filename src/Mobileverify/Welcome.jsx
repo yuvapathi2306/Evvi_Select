@@ -43,9 +43,11 @@
 //   );
 // }
 
-import React, { useEffect } from 'react';
+import React, { useEffect} from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
-import welcomeimg from "../Mobileverify/welcome1.avif";
+import welcomeimg from "../assets/welcome1.avif";
+// import "../Mobileverify/Welcome.css";
+
 
 export default function Welcome() {
   const navigate = useNavigate(); // Initialize useNavigate hook
@@ -67,7 +69,7 @@ export default function Welcome() {
 
   return (
     <>
-      <div className="modal fade" id="staticBackdrop" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+   <div className="modal fade" id="staticBackdrop" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
           <div className="modal-content">
             <div className="modal-header">
@@ -84,6 +86,7 @@ export default function Welcome() {
             </div>
           </div>
         </div>
+        
       </div>
     </>
   );

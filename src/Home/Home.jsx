@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../Home/bg1.avif'
+import image from '../assets/bg1.avif'
 import Navbar from '../Navbar/Navbar';
 // import "../Home/Home.css"
 
